@@ -1,21 +1,21 @@
-# Compose
+# Pipe
 
 ## Description
 
-Small library providing a `compose` function to compose functions from left to right.
+Small library providing a `pipe` function to compose functions from left to right.
 
 ## Installation
 
 ### Using npm:
 
 ```
-npm install @slicr97/compose
+npm install @slicr97/pipe
 ```
 
 ### Using yarn:
 
 ```
-yarn add @slicr97/compose
+yarn add @slicr97/pipe
 ```
 
 ## Usage
@@ -23,12 +23,12 @@ yarn add @slicr97/compose
 To give you an example of how this library works, look at the following code snippet:
 
 ```typescript
-import { compose } from '@slicr97/compose'
+import { pipe } from '@slicr97/pipe'
 
 const addOne = (x: number) => x + 1
 const multiplyByTwo = (x: number) => x * 2
 
-const addOneAndMultiplyByTwo = compose(addOne, multiplyByTwo)
+const addOneAndMultiplyByTwo = pipe(addOne, multiplyByTwo)
 
 const result = addOneAndMultiplyByTwo(2) // 6
 ```
