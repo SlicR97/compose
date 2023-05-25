@@ -73,4 +73,24 @@ describe('pipe', () => {
       expect(add9(1)).to.equal(10)
     })
   })
+
+  describe('pipe/10', () => {
+    it('pipes nine functions into another', () => {
+      const add1 = (n: number) => n + 1
+
+      const add10 = pipe(
+        add1,
+        add1,
+        add1,
+        add1,
+        add1,
+        add1,
+        add1,
+        add1,
+        add1,
+        add1,
+      )
+      expect(add10(1)).to.equal(11)
+    })
+  })
 })
