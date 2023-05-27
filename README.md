@@ -32,3 +32,11 @@ const addOneAndMultiplyByTwo = pipe(addOne, multiplyByTwo)
 
 const result = addOneAndMultiplyByTwo(2) // 6
 ```
+
+## Globalizing
+
+If you want to globalize the `pipe` function, you can do so by adding the following line to your code at the top of your entrypoint:
+
+```typescript
+import '@slicr97/pipe/globalize'
+```
