@@ -1,4 +1,4 @@
-type Fn<T0, T1> = (t0: T0) => T1
+import { Fn } from './types/fn.type'
 
 export function pipe<T0, T1, T2>(fn0: Fn<T0, T1>, fn1: Fn<T1, T2>): Fn<T0, T2>
 export function pipe<T0, T1, T2, T3>(
