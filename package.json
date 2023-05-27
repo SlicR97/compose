@@ -1,6 +1,6 @@
 {
   "name": "@slicr97/pipe",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Left-To-Right function composition",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
